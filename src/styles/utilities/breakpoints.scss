@@ -1,0 +1,20 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$up-to-sm: (max-width: $sm - 1px);
+$up-to-md: (max-width: $md - 1px);
+$up-to-lg: (max-width: $lg - 1px);
+$up-to-xl: (max-width: $xl - 1px);
+
+$above-sm: (min-width: $sm);
+$above-md: (min-width: $md);
+$above-lg: (min-width: $lg);
+$above-xl: (min-width: $xl);
+
+$only-xs: (max-width: $sm - 1px);
+$only-sm: (min-width: $sm) 'and' (max-width: $md - 1px);
+$only-md: (min-width: $md) 'and' (max-width: $lg - 1px);
+$only-lg: (min-width: $lg) 'and' (max-width: $xl - 1px);
+$only-xl: (min-width: $xl);

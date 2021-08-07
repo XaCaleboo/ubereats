@@ -1,0 +1,46 @@
+.button {
+    display: inline-flex;
+    box-sizing: border-box;
+    align-items: center;
+
+    padding: 0 20px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+
+    background-color: transparent;
+    
+    text-decoration: none;
+    color: var(--color-typo-main);
+
+    cursor: pointer;
+
+    font-family: var(--base-font);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-4);
+
+    outline: none;
+
+    &_default {
+        border-color: transparent;
+    }
+
+    &_outlined {
+        border-color: var(--color-button-border);
+    }
+
+    &.button_icon {
+        padding: 0 8px;
+    }
+
+    &:hover {
+        background-color: var(--color-hover);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 1px var(--color-typo-accent);
+        border-color: var(--color-typo-accent);
+    }
+}

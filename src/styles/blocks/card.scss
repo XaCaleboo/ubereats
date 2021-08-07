@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+
+    text-decoration: none;
+
+    margin-bottom: 16px;
+
+    outline: none;
+
+    &:hover {
+        background-color: var(--color-hover);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 1px var(--color-typo-accent);
+        border-radius: 2px;
+        border-color: var(--color-typo-accent);
+    }
+
+    &__photo {
+        display: block;
+        width: 100%;
+        height: 256px;
+    
+        object-fit: cover;
+    
+        @media #{$only-xs} {
+            height: 246px;
+        }
+    }
+
+    &__description {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}

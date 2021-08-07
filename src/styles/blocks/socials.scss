@@ -1,0 +1,21 @@
+.socials {
+    padding-top: 16px;
+
+    &__icons {
+        display: inline-block;
+        padding-top: 16px;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-right: 12px;
+
+        outline: none;
+        
+        &:focus {
+            box-shadow: 0 0 0 1px var(--color-typo-accent);
+            border-radius: 2px;
+            border-color: var(--color-typo-accent);
+        }
+    }
+}

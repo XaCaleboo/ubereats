@@ -1,0 +1,51 @@
+.menu {
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    background-color: var(--color-background-main);
+    border-bottom: 1px solid var(--color-restaurant-border);
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        display: inline-block;
+        position: relative;
+        margin-right: 40px;
+
+        font-family: var(--base-font-family);
+        font-weight: var(--font-weight-normal);
+        font-size: var(--font-size-3);
+
+        color: var(--color-typo-secondary);
+        text-decoration: none;
+
+        &:hover::after {
+            content: '';
+
+            position: absolute;
+            top: -0.5rem;
+            bottom: -0.5rem;
+            left: -0.75rem;
+            right: -0.75rem;
+
+            border-radius: 2px;
+            background-color: var(--color-hover);
+        }
+
+        &:focus {
+            outline: none;
+
+            color: var(--color-typo-accent);
+        }
+    }
+}

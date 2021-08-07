@@ -1,0 +1,116 @@
+.select {   
+    padding-bottom: 16px;
+    
+    
+    &__container {
+        position: relative;
+        box-sizing: border-box;
+        width: 75%;  
+    }
+
+    &__container * {
+        box-sizing: border-box;
+        
+        outline: none;
+        
+        &:focus {
+            box-shadow: 0 0 0 1px var(--color-typo-accent);
+            border-radius: 2px;
+            border-color: var(--color-typo-accent);
+        }
+    }
+
+    &__opener {
+        display: flex;
+        width: 100%;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        background-color: var(--color-background-select);
+
+        font-family: var(--base-font-family);
+        font-size: var(--font-size-4);
+        font-family: var(--font-weight-normal);
+        color: var(--color-typo-reverse);
+
+        cursor: pointer;
+        
+    }
+
+    &__opener::before {
+        content: '';
+
+        flex-shrink: 0;
+        height: 40px;
+        width: 40px;
+
+        background-image: url('img/world.svg');
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+    }
+
+    &__opener::after {
+        content: '';
+
+        flex-shrink: 0;
+        height: 40px;
+        width: 22px;
+
+        background-image: url('img/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: 14px auto;
+        background-position: center center;
+    }
+
+    &__opener span {
+        flex-grow: 1;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        line-height: 40px;
+    }
+    
+    &__container select {
+        visibility: hidden;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    &__panel {
+        position: absolute;
+        overflow: hidden;
+        top: 100%;
+        z-index: 1;
+        
+
+        max-height: 0;
+        width: 100%;
+
+        background-color: var(--color-background-select);
+
+        font-family: var(--base-font-family);
+        font-size: var(--font-size-4);
+        font-family: var(--font-weight-normal);
+        color: var(--color-typo-reverse);
+        line-height: 40px;
+
+        cursor: pointer;
+    }
+
+    &__container.is-open &__panel {
+        max-height: 10.7em;
+        overflow-y: auto;
+    }
+
+    &__option {
+        padding-left: 48px;
+    }
+
+    &__option.has-focus {
+        background-color: var(--color-background-main);
+        color: var(--color-typo-main);
+    }
+}

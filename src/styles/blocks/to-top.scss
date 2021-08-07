@@ -1,0 +1,31 @@
+.toTop {
+    position: fixed;
+    bottom: 24px;
+    right: 16px;
+
+    display: inline-flex;
+    box-sizing: border-box;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--color-typo-main);
+
+    outline: none;
+    
+    width: 64px;
+    height: 64px;
+
+    justify-content: center;
+
+    border: none;
+    background-color: var(--color-typo-accent);
+
+    @media #{$above-md} {
+        width: 80px;
+        height: 80px;
+    }
+
+    &:hover {
+        background-color: var(--color-hover-button);
+    }
+}

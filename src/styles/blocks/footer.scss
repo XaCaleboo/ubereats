@@ -1,0 +1,95 @@
+.footer {
+    padding-top: 16px;
+
+    background-color: var(--color-background-secondary);
+
+    &__section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        border-bottom: 1px solid var(--color-section-border);
+
+        &:last-child {
+            border: none;
+        }
+    }
+    
+    &__logo-link {
+        position: relative;
+        display: inline-block;
+
+        outline: none;
+
+        &:focus::after {
+            content: '';
+
+            position: absolute;
+            top: -0.75rem;
+            bottom: -0.75rem;
+            left: -0.75rem;
+            right: -0.75rem;
+
+            border-radius: 2px;
+            background-color: var(--color-background-select);
+            z-index: 0;
+        }
+    }
+    
+    &__logo {
+        position: relative;
+        display: block;
+        height: 20px;
+        z-index: 1;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        text-decoration: none;
+        color: var(--color-typo-reverse);
+
+        outline: none;
+        
+        &:focus {
+            box-shadow: 0 0 0 1px var(--color-typo-accent);
+            border-radius: 2px;
+            border-color: var(--color-typo-accent);
+        }
+    }
+
+    &__shops {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        outline: none;
+
+        &:focus {
+            box-shadow: 0 0 0 1px var(--color-typo-accent);
+            border-radius: 6px;
+            border-color: var(--color-typo-accent);
+        }
+    }
+
+    &__shops-image {
+        display: block;
+        height: 40px;
+    }
+
+    &__terms {
+        display: block;
+
+        text-decoration: none;
+        color: var(--color-typo-reverse);
+
+        outline: none;
+        
+        &:focus {
+            box-shadow: 0 0 0 1px var(--color-typo-accent);
+            border-radius: 2px;
+            border-color: var(--color-typo-accent);
+        }
+    }
+}

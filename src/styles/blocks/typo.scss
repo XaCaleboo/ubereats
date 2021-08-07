@@ -1,0 +1,53 @@
+.typo {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+
+    font-family: var(--base-font-family);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5em;
+    color: var(--color-typo-main);
+
+    &_h1 {
+        font-size: var(--font-size-2);
+
+        @media #{$above-md} {
+            font-size: var(--font-size-1)
+        }
+    }
+
+    &_h2 {
+        font-size: var(--font-size-2);
+    }
+    
+    &_h3 {
+        font-size: var(--font-size-3);
+    }
+
+    &_h4 {
+        font-size: var(--font-size-4);
+    }
+
+    &_h5 {
+        font-size: var(--font-size-5);
+    }
+
+    &_h6 {
+        font-size: var(--font-size-6);
+    }
+
+    &.typo_weight_bold {
+        font-weight: var(--font-weight-bold);
+    }
+
+    &.typo_color_secondary {
+        color: var(--color-typo-secondary);
+    }
+
+    &.typo_color_accent {
+        color: var(--color-typo-accent);
+    }
+
+    &.typo_color_reverse {
+        color: var(--color-typo-reverse);
+    }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трактир Пушкин</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__link" href="#" aria-label="На главную">
+                <img class="header__logo" src="img/logo.svg" alt="UberEats" title="UberEats" />
+            </a>
+            <div class="header__navigation">
+                <button class="button button_outlined" onclick="alert('Дратути')">Войти</button>
+                <a class="button button_default button_icon hidden_xs" href="#" aria-label="Корзина">
+                    <span class="icon icon_basket" aria-label="Иконка корзины"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="jumbotron">
+            <img class="jumbotron__image" src="/img/jumbotron.png" alt="Трактир Пушкин">
+            <div class="container">
+                <div class="jumbotron__card col-xs-12 col-md-7 col-lg-5">
+                    <h1 class="typo typo_h1">Трактир «Пушкин»</h1>
+                    <div class="jumbotron__description">
+                        <p class="typo typo_h4 typo_color_secondary">
+                            <span class="visually-hidden">Высокая ценовая категория</span>
+                            <span aria-hidden="true">₽₽₽</span> • Европейская
+                        </p>
+                        <div class="jumbotron__time">40 - 50 мин</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav class="menu visually-hidden_xs visually-hidden_sm">
+            <div class="container">
+                <ul class="menu__container">
+                    <li class="menu__item"><a class="menu__link" href=#>Закуски</a></li>
+                    <li class="menu__item"><a class="menu__link" href=#>Салаты</a></li>
+                    <li class="menu__item"><a class="menu__link" href=#>Супы</a></li>
+                    <li class="menu__item"><a class="menu__link" href=#>Горячие блюда</a></li>
+                    <li class="menu__item"><a class="menu__link" href=#>Гарниры</a></li>
+                    <li class="menu__item"><a class="menu__link" href=#>Десерты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="container positions-block">
+            <h2 class="typo typo_h2 positions-block__title">Закуски</h2>
+            <div class="positions row">
+                <section class="col-xs-12 col-lg-6">
+                    <a class="positions__item" href=#>
+                        <div class="positions__description">
+                            <h3 class="positions__overflow positions__title">
+                                Сельдь на бородинском хлебе
+                            </h3>
+                            <p class="positions__overflow positions__addition">
+                                С яйцом и огурцом
+                            </p>
+                        </div>
+                        <p class="positions__price">240 ₽</p>
+                        <img class="positions__image" src="img/herring.png" alt="Сельдь" title="Сельдь">
+                    </a>
+                </section>
+                <section class="col-xs-12 col-lg-6">
+                    <a class="positions__item" href=#>
+                        <div class="positions__description">
+                            <h3 class="positions__overflow positions__title">
+                                Соленья ассорти
+                            </h3>
+                        </div>
+                        <p class="positions__price">320 ₽</p>
+                        <img class="positions__image" src="img/pickles.png" alt="Соленья" title="Соленья">
+                    </a>
+                </section>
+                <section class="col-xs-12 col-lg-6">
+                    <a class="positions__item" href=#>
+                        <div class="positions__description">
+                            <h3 class="positions__overflow positions__title">
+                                Грибы маринованные
+                            </h3>
+                        </div>
+                        <p class="positions__price">300 ₽</p>
+                        <img class="positions__image" src="img/mushroom.png" alt="Грибы маринованные" title="Грибы маринованные">
+                    </a>
+                </section>
+                <section class="col-xs-12 col-lg-6">
+                    <a class="positions__item" href=#>
+                        <div class="positions__description">
+                            <h3 class="positions__overflow positions__title">
+                                Сало домашнее с горчицей
+                            </h3>
+                        </div>
+                        <p class="positions__price">320 ₽</p>
+                        <img class="positions__image" src="img/fat.png" alt="Сало с горчицей" title="Сало с горчицей">
+                    </a>
+                </section>
+                <section class="col-xs-12 col-lg-6">
+                    <a class="positions__item" href=#>
+                        <div class="positions__description">
+                            <h3 class="positions__overflow positions__title">
+                                Малосольная семга
+                            </h3>
+                        </div>
+                        <p class="positions__price">390 ₽</p>
+                        <img class="positions__image" src="img/salmon.png" alt="Малосольная семга" title="Малосольная семга">
+                    </a>
+                </section>
+                <section class="col-xs-12 col-lg-6">
+                    <a class="positions__item" href=#>
+                        <div class="positions__description">
+                            <h3 class="positions__overflow positions__title">
+                                Язык говяжий с хреном
+                            </h3>
+                        </div>
+                        <p class="positions__price">350 ₽</p>
+                        <img class="positions__image" src="img/tongue.png" alt="Язык говяжий с хреном" title="Язык говяжий с хреном">
+                    </a>
+                </section>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <section class="footer__section" aria-label="На главную">
+                <a class="footer__logo-link" href="#" aria-label="На главную">
+                    <img class="footer__logo" src="img/white-logo.svg" alt="Логотип" title="UberEats"/>
+                </a>
+            </section>
+
+            <section class="footer__section" aria-label="Язык и навигация">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <select class="select">
+                            <option value="ru">Русский</option>
+                            <option value="en">English</option>
+                        </select>
+                        <section class="socials">
+                            <p class="typo typo_h3 typo_color_reverse">
+                                <span class="typo typo_h3 typo_color_accent">#</span>UberEats
+                            </p>
+                            <div class="socials__icons">
+                                <a class="socials__link" href="#" aria-label="Facebook"><span class="icon icon_facebook"></span></a>
+                                <a class="socials__link" href="#" aria-label="Twitter"><span class="icon icon_twitter"></span></a>
+                                <a class="socials__link" href="#" aria-label="Instagram"><span class="icon icon_instagram"></span></a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <a class="footer__link typo typo_h4" href="#">Об UberEats</a>
+                        <a class="footer__link typo typo_h4" href="#">Станьте партнером по доставке</a>
+                        <a class="footer__link typo typo_h4" href="#">Станьте партнером-рестораном</a>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <a class="footer__link typo typo_h4" href="#">Все города</a>
+                        <a class="footer__link typo typo_h4" href="#">Цены</a>
+                        <a class="footer__link typo typo_h4" href="#">Помощь</a>
+                        <a class="footer__link typo typo_h4" href="#">FAQs</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer__section" aria-label="Мы в App Store и Google Play">
+                <div class="row center-xs">
+                    <a class="footer__shops" href="#" aria-label="App store">
+                        <img class="footer__shops-image" src="img/app-store.png" alt="App Store" title="App Store"/>
+                    </a>
+                    <a class="footer__shops" href="#" aria-label="Google Play">
+                        <img class="footer__shops-image" src="img/google_play.png" alt="Google Play" title="Google Play"/>
+                    </a>
+                </div>
+            </section>
+
+            <section class="footer__section" aria-label="Политика компании">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <p class="footer__terms typo typo_h6">© 2017 Uber Technologies Inc.</p>
+                    </div >
+                    <div class="col-xs-12 col-md-4">
+                        <a class="footer__terms typo typo_h6" href="#">Обработка персональных данных</a>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <a class="footer__terms typo typo_h6" href="#">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+
+    <button class="toTop" onclick="topFunction()">
+        <span class="icon icon_arrow" aria-label="В начало страницы"></span>
+    </button>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/custom-select@1.1.15/build/custom-select.min.js" integrity="sha256-SU/RPZa1SXo96INXxpZMtkPZwHBMcxqszSKmypFw+04=" crossorigin="anonymous"></script>
+    <script>
+        customSelect('select', {
+            containerClass: 'select__container',
+            openerClass: 'select__opener',
+            panelClass: 'select__panel',
+            optionClass: 'select__option',
+            optgroupClass: 'select__optgroup',
+            isSelectedClass: 'is-selected',
+            hasFocusClass: 'has-focus',
+            isDisabledClass: 'is-disabled',
+            isOpenClass: 'is-open'
+        });
+    </script>
+    <script>
+        const topFunction = () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
